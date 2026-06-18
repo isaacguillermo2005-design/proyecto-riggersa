@@ -1,3 +1,3 @@
 # Proyecto Riggersa
 
-Este es mi primer proyecto subido a GitHub.
+Este es mi primer proyecto subido a GitHub..
