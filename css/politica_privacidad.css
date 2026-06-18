@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}   
+
+body{
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}   
+
+/* ==================================== HEADER =====================================*/
+
+.header{
+    background: #0f172a;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header_logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+.header_nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header_nav a{
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform .3s ease ;
+    background: #ff7315;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.header_nav a:hover{
+    color: #1e293b;
+    transform: translateY(-5px);
+    background-color: #ccc;
+}
+
+.menu-toggle{
+    display:none;
+    cursor:pointer;
+}
+
+/* RESPONSIVE  NAV*/
+
+@media(max-width:768px) {
+    .header_nav {
+        position:absolute;
+        top:110px;
+        right:0;
+        flex-direction:column;
+        width:180px;
+        padding: 20px;
+        display:none;
+        background-color: #0f172a;
+    }
+    .header_nav.active {
+        display:flex;
+    }
+    .menu-toggle {
+        display:block;
+        font-size: 45px;
+        color: #fff;
+    }
+}
+
+/* ==================================== MAIN =====================================*/
+
+.legal-page {
+    padding: 60px 0;
+    background: #f1f5f9;
+}
+
+.legal-title {
+    font-size: 2.4rem;
+    margin-bottom: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.legal-section {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.legal-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.legal-section p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.legal-section ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.legal-section li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #334155;
+}
+
+/* RESPONSIVE  MAIN*/
+@media (max-width: 768px) {
+
+    .legal-page {
+        padding: 30px 0;
+    }
+
+    .legal-title {
+        font-size: 1.8rem;
+    }
+
+    .legal-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .legal-section p,
+    .legal-section li {
+        font-size: 1rem;
+    }
+}
+
+/* ==================================== FOOTER =====================================*/
+
+.footer {
+    background: #1e293b;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 50px;
+    padding: 0 20px 60px;
+}
+
+.footer-title {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-line {
+    width: 50%;
+    height: 3px;
+    background: #f97316;
+    margin-bottom: 25px;
+}
+
+.brand {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.brand span {
+    color: #f97316;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #cbd5e1
+}
+
+.footer-links {
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 15px;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #cbd5e1;
+    margin-bottom: 10px;
+    transition: transform .3s ease;
+}
+
+.footer-links a:hover {
+    color: #f97316;
+    transition: all 0.25s ease;
+    transform: translateX(8px);
+}
+
+.footer-bottom {
+    background: #0b1120;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* RESPONSIVE  FOOTER*/
+
+@media (max-width: 768px) {
+    .footer-grid {
+        text-align: center;
+    }
+    .footer-line {
+        margin: 0 auto 20px;
+    }
+}  
